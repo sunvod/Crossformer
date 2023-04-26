@@ -58,9 +58,12 @@ data_parser = {
     'ETTh1':{'data':'ETTh1.csv', 'data_dim':7, 'split':[12*30*24, 4*30*24, 4*30*24]},
     'ETTm1':{'data':'ETTm1.csv', 'data_dim':7, 'split':[4*12*30*24, 4*4*30*24, 4*4*30*24]},
     'WTH':{'data':'WTH.csv', 'data_dim':12, 'split':[28*30*24, 10*30*24, 10*30*24]},
-    'ECL':{'data':'ECL.csv', 'data_dim':321, 'split':[15*30*24, 3*30*24, 4*30*24]},
+    'Electricity':{'data':'electricity.csv', 'data_dim':321, 'split':[15*30*24, 3*30*24, 4*30*24]},
     'ILI':{'data':'national_illness.csv', 'data_dim':7, 'split':[0.7, 0.1, 0.2]},
     'Traffic':{'data':'traffic.csv', 'data_dim':862, 'split':[0.7, 0.1, 0.2]},
+    'Venezia':{'data':'venezia.csv', 'data_dim':1, 'split':[70080, 17520, 17520]},
+    'Temperature':{'data':'temperature.csv', 'data_dim':1, 'split':[4064, 1024, 1024]},
+    'Weather':{'data':'weather.csv', 'data_dim':12, 'split':[0.8, 0.1, 0.2]},
 }
 if args.data in data_parser.keys():
     data_info = data_parser[args.data]
